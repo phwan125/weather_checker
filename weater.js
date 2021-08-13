@@ -12,6 +12,7 @@ function successFunction() {
       const hum = document.querySelector("#weather .hum");
       const windSpeed = document.querySelector("#weather .wind_speed");
       const windDegree = document.querySelector("#weather .wind_degree");
+      const icon = document.querySelector("i");
 
       city.innerText = data.name;
       weather.innerText = data.weather[0].main;
@@ -19,6 +20,8 @@ function successFunction() {
       hum.innerText = `${data.main.humidity}%`;
       windSpeed.innerText = `${data.wind.speed}m/s`;
       windDegree.innerText = `${data.wind.deg}`;
+      icon.style.transform = `rotate(${data.wind.deg}deg)`;
+      console.dir(icon);
     });
 }
 
