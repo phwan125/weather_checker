@@ -20,10 +20,10 @@ div.image {
   position: relative;
 }
 
-i {
+div > i {
   color: brown;
   position: absolute;
-  bottom: 150px;
-  right: 250px;
+  bottom: 120px;
+  right: 155px;
   z-index: 10;
 }
